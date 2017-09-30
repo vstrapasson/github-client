@@ -1,0 +1,104 @@
+$border-color: #ccc;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  padding: 2em 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.search-bar{
+
+  text-align: center;
+
+  input{
+    box-sizing: border-box;
+    width: 90%;
+    padding: 0.6em;
+    border: 1px solid $border-color;
+    border-radius: 0.3em;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  button {
+    width: 10%;
+    padding: 0.6em;
+    background-color: #eee;
+    border: 1px solid $border-color;
+    cursor: pointer;
+  }
+}
+
+.repositories {
+  list-style: none;
+  font-size: 1.2em;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  li{
+    text-align: center;
+    padding: 1em;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    width: 49%;
+    margin-bottom: 0.65em;
+  }
+
+}
+
+.profile {
+  box-sizing: border-box;
+  margin-top: 1em;
+  width: 100%;
+
+  .card{
+    border: 1px solid $border-color;
+    min-width: 200px;
+    width: 30%;
+    display: inline-block;
+    float: left;
+
+    img{
+      width: 100%;
+    }
+
+    .name {
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+  }
+
+  .repositories{
+    float: left;
+    width: calc(70% - 5px);
+    padding-left: 1em;
+  }
+
+  .info {
+    padding: 0.5em;
+
+    div{
+      padding: 0.3em 0;
+    }
+
+    span:first-of-type{
+      margin-right: 1em;
+    }
+  }
+}
+
+.clear-fix {
+  clear: both;
+}
