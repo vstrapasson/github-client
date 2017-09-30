@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box; }
 
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
 .container {
   max-width: 1000px;
   padding: 2em 0;
